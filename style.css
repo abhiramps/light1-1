@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+header nav{
+    height: 70px;
+    width: 100%;
+    background-color:white;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 1px 5px 8px -7px;
+}
+nav .content{
+    width: 98%;
+    /* background-color: rgb(222, 216, 226); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .content .banner img{
+    border-radius: 5px;
+}
+nav .content span{
+    padding-left: 3rem;
+    color: rgba(68, 67, 65, 0.666);
+}
+nav .content .dp img{
+    object-fit: cover;
+    object-position:top;
+    width: 50px;
+    border-radius: 30px;
+}
+main {
+    /* margin-top: 4rem ; */
+    width: 100%;
+}
+
+.host{
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+}
+
+.recorder{
+    display: flex;
+    position: relative;
+    margin: 1rem 0 1rem 0;
+}
+.recorder .recording{
+    width: 90px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(252, 0, 0);
+    border-radius: 5px;
+}
+.recorder .recording i,.recorder .recording span{
+    font-size: .8rem;
+    margin-left: 2px ;
+}
+.recorder .time{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(22, 206, 22);
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+}
+.host .hostimage{
+   width: 80%;
+   height: 60vh;
+   border: solid 2px rgb(22, 206, 22);
+   border-radius: 10px;
+}
+.host .hostimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px 5px 8px -7px;
+    border-radius: 10px;
+    /* transform: scale(1.01); */
+}
+.host .hostimage i{
+    color: red;
+    position: relative;
+    bottom: 3rem;
+    
+}
+.host .hostimage span{
+    color: white;
+    position: relative;
+    bottom: 3rem;
+    font-size: 700;
+}
+
+.partisipents{
+margin-top: 3rem;
+
+}
+.partisipents .participant{
+    /* width: 70%; */
+    padding: .4rem 0 .4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+.partisipents .participant img{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 4px 5px 11px -5px;
+}
+.partisipents .participant .mute{
+    position: relative;
+    bottom: 1.5rem;
+}
+.partisipents .participant .mute i{
+    color: red;
+    font-size: .8rem;
+}
+.partisipents .participant .mute span{
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+    font-weight: 800;
+    text-shadow: 2px 2px rgba(21, 20, 20, 0.809);
+}
+
+.partisipents .participant .more{
+    width: 70%;
+    height: 18vh;
+    /* min-height: 14vh; */
+    background-color: rgba(248, 246, 246, 0.679);
+    border-radius: 10px;
+    box-shadow: 4px 5px 11px -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.partisipents .participant .more button{
+    border: none;
+    background-color: transparent;
+}
+.partisipents .participant .more button i{
+    font-size: 5rem;
+    color: rgba(128, 128, 128, 0.563);
+}
+.partisipents .participant .more span{
+    background-color: rgb(95, 151, 10);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: honeydew;
+    border: 2px white;
+    position: relative;
+    top: 1.4rem;
+    right: .7rem;
+}
+
+.menus{
+    /* background-color: turquoise; */
+    height: 3rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* top: 2rem; */
+}
+.menus :nth-child(1) i{
+    color: rgba(87, 87, 81, 0.707);
+}
+.menus :nth-child(2) i{
+    color: rgba(87, 87, 81, 0.707);
+}
+.menus :nth-child(3) i{
+    color: rgba(48, 240, 0, 0.768);
+}
+.menus :nth-child(4) i{
+    color: rgba(87, 87, 81, 0.707);
+}
+.menus :nth-child(5) i{
+    color: rgb(255, 6, 6);
+    font-size: 1.3rem;
+}
+.menus :nth-child(6) i{
+    color: rgba(87, 87, 81, 0.707);
+}
+.menus :nth-child(7) i{
+    color: rgba(87, 87, 81, 0.707);
+}
+.menus :nth-child(8) i{
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+}
+
+
+.sidebar{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; */
+    font-size: .9rem;
+    font-weight: 300;
+}
+.sidebar .heading{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.sidebar .heading :nth-child(2){
+    border-bottom: solid 2px rgba(48, 240, 0, 0.768);
+}
+.sidebar  .addpeople{
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+.sidebar  .addpeople button{
+    border: none;
+    background: transparent;
+}
+.sidebar  .addpeople i{
+    color: rgba(128, 128, 128, 0.398);
+}
+.sidebar  .addpeople span{
+    padding-left: 1rem;
+}
+.sidebar .rasedhand{
+
+}
+.sidebar .rasedhand label{
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding-bottom: .4rem;
+    font-weight: 500;
+}
+.sidebar .rasedhand .user {
+    width: 100%;
+    /* background-color: hotpink; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-bottom: 1rem;
+}
+.sidebar .rasedhand .user :nth-child(1){
+    font-size: 1.5rem;
+    color: rgba(128, 128, 128, 0.398);
+    border: none;
+    background: transparent;
+}
+.sidebar .rasedhand .user :nth-child(2){
+    margin-left: .5rem;
+   /* font-size: .8rem; */
+}
+.sidebar .rasedhand .user :nth-child(3){
+    position:absolute;
+    right: 6rem;
+    border: none;
+    background: transparent;
+}
+.sidebar .rasedhand .user :nth-child(3) i{
+    color: rgb(243, 255, 7);
+    font-size: 1rem;
+}
+
+.sidebar .rasedhand .user :nth-child(4){
+    position:absolute;
+    right: 3.5rem;
+    border: none;
+    background: transparent;
+}
+.sidebar .rasedhand .user :nth-child(4) i{
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.398);
+}
+.sidebar .rasedhand .user :nth-child(5){
+    position:absolute;
+    right: 2rem;
+    border: none;
+    background: transparent;
+}
+.sidebar .rasedhand .user :nth-child(5) i{
+    font-size: 1rem;
+    color: rgba(85, 81, 81, 0.892);
+}
+.sidebar .incall{
+
+}
+
+.sidebar .incall label{
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding-bottom: .4rem;
+    font-weight: 500;
+}
+.sidebar .incall .user{
+    padding-bottom: 1rem;
+}
+.sidebar .incall .user :nth-child(1){
+    border: none;
+    background: transparent;
+}
+.sidebar .incall .user :nth-child(1) i{
+    font-size: 1.5rem;
+    color: rgba(128, 128, 128, 0.398);
+}
+.sidebar .incall .user :nth-child(2){
+    margin-left: .5rem;
+}
+/* .sidebar .incall .user :nth-child(3){
+    position:absolute;
+    right: 3.2rem;
+    color: rgba(128, 128, 128, 0.398);
+} */
+.sidebar .incall .user :nth-child(3){
+    border: none;
+    background: transparent;
+    position:absolute;
+    right: 3.5rem;
+}
+.sidebar .incall .user :nth-child(3) i{
+   font-size: 1rem;
+    color: rgba(128, 128, 128, 0.398);
+}
+
+.sidebar .incall .user :nth-child(4){
+    position:absolute;
+    right: 2rem;
+    border: none;
+    background: transparent;
+}
+.sidebar .incall .user :nth-child(4) i{
+    font-size: 1rem;
+    color: rgba(85, 81, 81, 0.892);
+}
